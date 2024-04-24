@@ -1,0 +1,172 @@
+body {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 20px;
+    justify-content: center;
+
+    margin: 10px;
+    margin-top: 40px;
+
+    background: linear-gradient(to right, rgba(8, 111, 148, 0.449), rgba(40, 207, 171, 0.394) 70%);
+}
+
+section {
+    box-shadow: 0 10px 20px rgb( 0, 0, 0, 0.1 );
+    border: 3px solid rgb(132, 132, 186);
+    border-radius: 5px;
+    border-width: 4px;
+    
+    margin-top: 120px;;
+
+}
+
+section button {
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: rgb(117, 125, 168);
+    box-shadow: 0 4px 8px rgb( 0, 0, 0, 0.1 );
+    background-color: rgb(74, 79, 103);
+    color: whitesmoke;
+}
+
+section button:hover {
+    background-color:rgb(57, 62, 84);
+    color: rgb(204, 203, 203);
+
+    cursor: pointer;
+}
+
+.calculator {
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    grid-column: 1;
+    padding: 20px;
+    width: 210px;
+
+    background:rgb(151, 151, 216);
+
+    justify-self: right;
+
+    text-align: center;
+}
+
+.display #input {
+    width: 198px;
+    height: 30px;
+    background: rgba(248, 248, 248, 0.873);
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 2px;
+    text-align: right;
+
+    font-family: 'Courier New', Courier, monospace;  
+
+}
+
+.calculator .buttons button {
+    margin: 4px;
+    width: 40px;
+}
+
+.ops {
+    background-color: rgb(51, 103, 51);
+}
+
+.ops:hover {
+    background-color: rgb(37, 78, 37);
+}
+
+.c {
+    background-color:  rgb(110, 39, 39);
+}
+
+.c:hover {
+    background-color:  rgb(92, 29, 29);
+}
+
+.bottom button {
+    margin: 4px;
+    text-align: center;
+}
+
+.bottom .sign {
+    width: 40px;
+    text-align: center;
+
+    background-color: rgb(101, 101, 38);
+}
+
+.sign:hover {
+    background-color: rgb(80, 80, 25);
+}
+
+.bottom .equals {
+    width: 92px;
+    text-align: center;
+}
+
+.bottom .equals button {
+    margin: 4px;
+    width: 196.5px;
+}
+
+.bottom .back {
+   width: 40px;
+   height: 55px;
+
+   text-align: center;
+
+   background-color: rgb(58, 59, 59);
+}
+
+.back:hover {
+    background-color: rgb(48, 48, 48);;
+}
+
+.history {
+    grid-column: 2;
+    width: 210px;
+    padding: 20px;
+
+    justify-self: left;
+
+    background:rgb(151, 151, 216);
+}
+
+.bank {
+    height: 262px;
+    max-height: 262px;
+    overflow-y: auto;
+    
+    border: 0.5px solid rgb(74, 79, 103);
+    border-radius: 4px;
+    border-width: 2px;
+    padding: 10px;
+
+    background: rgba(248, 248, 248, 0.873);
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bank .row:nth-child(odd) {
+    background-color: rgba(207, 215, 247, 0.873);;
+}
+
+.row:hover, .row:nth-child(odd):hover {
+    cursor:pointer;
+    background-color: rgb(230, 91, 91);
+}
+
+.history .clear {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.history .clear button {
+    width: 250px;
+    margin: 4px;
+    box-shadow: 0 4px 8px rgb( 0, 0, 0, 0.1 );
+}

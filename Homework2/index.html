@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+
+    <!-- Calculator portion -->
+    <section class="calculator">
+
+        <!-- Connect to calculator js file -->
+        <script src="./js/calculator.js"></script>
+
+        <div class="display">
+
+            <input type="text" id="input">
+
+        </div>
+
+        <div class="buttons">
+
+            <div class="buttonsR1">
+
+                <button id="b7"><h3>7</h3></button>
+                <button id="b8"><h3>8</h3></button>
+                <button id="b9"><h3>9</h3></button>
+                <button id="bdiv" class="ops"><h3>÷</h3></button>
+
+            </div>
+
+            <div class="buttonsR2">
+
+                <button id="b4"><h3>4</h3></button>
+                <button id="b5"><h3>5</h3></button>
+                <button id="b6"><h3>6</h3></button>
+                <button id="bmul" class="ops"><h3>x</h3></button>
+
+            </div>
+
+            <div class="buttonsR3">
+
+                <button id="b1"><h3>1</h3></button>
+                <button id="b2"><h3>2</h3></button>
+                <button id="b3"><h3>3</h3></button>
+                <button id="bsub" class="ops"><h3>-</h3></button>
+
+            </div>
+
+            <div class="buttonsR4">
+
+                <button id="bcle" class="c"><h3>C</h3></button>
+                <button id="b0"><h3>0</h3></button>
+                <button id="bdec"><h3>.</h3></button>
+                <button id="bplu" class="ops"><h3>+</h3></button>
+
+            </div>
+
+        </div>
+
+        <div class="bottom"> 
+        
+                <button id="bsign" class="sign"><h3>+/-</h3></button>
+
+                <button id="bequ" class="equals"><h3>=</h3></button>
+
+                <button id="bback" class="back"><h4>DEL</h4></button>
+
+        </div>
+
+    </section>
+
+
+    <!-- History portion -->
+    <section class="history">
+
+        <div class="bank">
+            
+            <div class="row"></div>
+
+        </div>
+
+        <div class="clear">
+
+            <button onclick="clearHist()"><h4>Clear History</h4></button>
+
+        </div>
+
+    </section>
+    
+</body>
