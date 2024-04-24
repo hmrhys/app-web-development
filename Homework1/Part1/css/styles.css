@@ -1,0 +1,202 @@
+/** styles.css */
+/** link import for google font */
+@import url( 'https://fonts.googleapis.com/css2?family=Trirong' );
+
+body {
+    font-family: 'Trirong', serif;
+    background-color: whitesmoke;
+    margin: 0;
+    display: grid;
+    align-items: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  background-color: rgb(177, 190, 216);
+}
+
+header .title {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  border: 1px;
+  background-color: rgb(177, 190, 216);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+header .logo {
+  float: left;
+  display: flex;
+}
+
+header .login {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(177, 190, 216);
+}
+
+header .btnRegister, .btnLogin {
+  padding: 5px 20px;
+  margin: 5px;
+  cursor: pointer;
+
+  box-shadow: 0 2px 6px rgb( 0, 0, 0, 0.1 );
+}
+
+.title h1 {
+  background-color: whitesmoke;
+  border-bottom: 1px solid #555;
+  border-color:rgb(33, 33, 33);
+  border-left-width: 10px;
+}
+
+.navBar {
+    border-radius: 1px;
+    border-style: solid;
+    border: 1.5px solid;
+    border-color: #555;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+    background-color: rgb(177, 190, 216);
+    width: 100%
+}
+
+.navBar a {
+  text-decoration: dotted;
+  padding: 1px 20px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+  background-color: whitesmoke;
+  color: rgb(41, 46, 58);
+}
+
+.navBar a:hover {
+  background-color: #bebebe;
+
+}
+
+.navBar a:active {
+  background-color: #858585;
+  color: #dadada;
+}
+
+main {
+  margin: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.news a, .sports a, .business a, .culture a, .science a {
+  text-decoration: none;
+}
+
+.breaking {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  color: rgb(48, 48, 48);
+}
+
+.breaking a {
+  display: contents;
+}
+
+.trump, .ingenuity, .beal, .vince, .ai {
+  margin-left: 10px;
+  box-shadow: 0 4px 8px rgb( 177, 190, 216 );
+  padding: 15px;
+  height: 250px;
+}
+
+.trump a, .ingenuity a, .beal a, .vince a, .ai a {
+  color: rgb(48, 48, 48);
+}
+
+.breaking img {
+  height: auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 8px rgb( 0, 0, 0, 0.1 );
+}
+
+.content h3 {
+  background-color: rgb(177, 190, 216);
+  color: rgb(48, 48, 48);
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+}
+
+.breaking h1 {
+  border-bottom: 3px solid rgb(49, 99, 190);
+  position: relative;
+  align-self: start;
+  margin: 5px;
+}
+
+.articleDash {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 10px;
+  color: rgb(29, 46, 58);
+
+}
+
+.articleDash > div {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: whitesmoke;
+  padding: 14px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb( 177, 190, 216 );
+}
+
+.articleDash img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.articleDash h4 {
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.articleDash h5 {
+  font-weight: 600;
+  font-size: 0.9em;
+  border-bottom: 3px solid rgb(49, 99, 190);
+}
+
+.articleDash p {
+  font-size: small;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.articleDash a {
+  color: rgb(48, 48, 48);
+}
+
+.genocide .link, .japan .link, .doom .link, .execution .link, .biden .link, .tanker .link, .wolf .link, .fossils .link, .beal .link, .varsity .link, .harbaugh .link, .eclipse .link, .freshman .link, .shoppers .link, .flexport .link, .allen .link, .packaging .link, .spears .link, .stanley .link, .pig .link, .toothpick .link {
+  font-size: 0.6em;
+  font-weight: 600;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Oakland Observer Landing Page</title>
+</head>
+<body>
+
+    <!-- NOTE:
+        Question: Should I create my navbar as an ordered list <li>? 
+            And when a tab (e.g. Culture) is hovered over, a <ul> list appears with different
+            subsections of that tab? (e.g. (Culture 1.1 "Festival this weekend", 1.2 "National Food Day"))
+
+            ^^Question refers to style used in header section of L4/positioning.html
+    -->
+
+    <header id="home">
+        <img src="./images/oaktree.png" alt="oak tree logo" width="110px" length="40px" class="logo">
+
+        <div class="title">
+            <h1>Oakland Observer</h1>
+            <strong><div id="titleLine">Bringing fresh news to you since 1942</div></strong>
+        </div>
+
+        <nav class="login">
+
+            <button class="btnRegister">
+                <a href="https://randomuser.me/">Register</a>
+            </button>
+
+            <button class="btnLogin">
+                <a href="https://randomuser.me/">Login</a>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <nav class="navBar">
+        <table>
+            <tr>
+                <td>
+                    <a href="#home" id="home">
+                        <!-- <button class="homeBtn"> -->
+                            Home
+                        <!-- </button> -->
+                    </a>
+                </td>
+                <td>
+                    <a href="#news" id="news">News</a>
+                </td>
+                <td>
+                    <a href="#sports" id="sports">Sports</a>
+                </td>
+                <td>
+                    <a href="#business" id="business">Business</a>
+                </td>
+                <td>
+                    <a href="#culture" id="culture">Culture</a>
+                </td>
+                <td>
+                    <a href="#science" id="science">Science</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <main class="content">
+
+        <div class="news" id="news">
+
+            <h3>
+                News
+            </h3>
+
+            <article class="breaking">
+
+                <a href="https://www.bbc.com/news/live/world-us-canada-68109585?src_origin=BBCS_BBC" target ="_blank">
+                    <img src="https://ichef.bbci.co.uk/ace/standard/1536/cpsprodpb/9CB2/production/_132441104_9941b654f08f85584801bd1df5b48f310828788b.jpg.webp" alt="trump">
+                </a>
+
+                <div class="trump">
+                    <h1>Trump to pay $83mil from defamation trial</h1>
+                    <h6>Writer E Jean Carroll demands compensation for defamation comments made by the former president in the White House.</h6>
+                    <h5><a href="https://www.bbc.com/news/live/world-us-canada-68109585?src_origin=BBCS_BBC">Click here to read more</a></h5>
+                </div>
+
+            </article>
+            
+            
+
+            <div class="articleDash">
+
+                <div class="genocide"> 
+
+                    <h4>Israel-Hamas War</h4>
+                    <h5>U.N. Demands Israel to Prevent Genocide but Not to End War</h5>
+                    <p>Court Ruling Calls for Prevention Measures for Genocidal Acts, Pro-Palestinians Protest for More Action.</p>
+                    <a href="https://www.nytimes.com/live/2024/01/26/world/israel-hamas-gaza-news"><p class="link">More..</p></a>
+                    <img src="https://static01.nyt.com/images/2024/01/26/multimedia/26israel-hamas-blog-icj-carousel-01-wqpf/26israel-hamas-blog-icj-carousel-01-wqpf-threeByTwoMediumAt2X.jpg?quality=75&auto=webp">
+                    
+                </div>
+
+                <div class="execution">
+                    <h4>Awry Alabama Execution</h4>
+                    <h5>"Painless" Legal Execution Leaves Prisoner Thrashing</h5>
+                    <p>Alabama AG calls first nitrogen gas execution "textbook" and "painless", but witnesses say inmate thrashed violently during final moments.</p>
+                    <a href="https://www.nbcnews.com/news/us-news/alabama-ag-calls-first-nitrogen-gas-execution-textbook-witnesses-say-i-rcna135810"><p class="link">More..</p></a>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-860x484,f_auto,q_auto:best/mpx/2704722219/2024_01/1706292128744_n_jose_leehedgepeth_240126_1920x1080-9r37bz.jpg">
+                </div>
+
+                <div class="biden">
+                    <h4>Biden to Shut Down Border</h4>
+                    <h5>President Vows to Shut Down Border, Congress Pressured to Pass Immigration Deal</h5>
+                    <p>President's statement comes as a response to Republican Speaker of the House's claim that emerging bipartisan immigration deal is "dead" on arrival.</p>
+                    <a href="https://www.nytimes.com/2024/01/26/us/politics/johnson-opposes-border-deal.html"><p class="link">More..</p></a>
+                    <img src="https://static01.nyt.com/images/2024/01/26/multimedia/26dc-cong-kgbj/26dc-cong-kgbj-superJumbo.jpg?quality=75&auto=webp">
+                </div>
+
+                <div class="tanker">
+                    <h4>Oil Tanker on Fire</h4>
+                    <h5>Houthi Missile Attack Leaves Oil Tanker On Fire in Fulf of Aden</h5>
+                    <p>Yemen's Houthi militants continue attacks on Gulf of Anden along the key shipping route, this time hitting an Oil Tanker.</p>
+                    <a href="https://www.cnn.com/2024/01/26/middleeast/oil-tanker-fire-houthi-missile-attack-gulf-aden-intl/index.html"><p class="link">More..</p>
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/240126182617-yemenis-mock-missile-protest-012624.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="sports" id="sports">
+
+            <h3>
+                Sports
+            </h3>
+
+            <article class="breaking">
+
+                <a href="https://www.si.com/nba/suns/gameday/bradley-beal-struck-face-leaves-phoenix-suns-indiana-pacers" target="_blank">
+                    <img src="https://arizonasports.com/wp-content/uploads/2024/01/GettyImages-1888682052-e1706224714340-900x506.jpg" alt="bradley beal">
+                </a>
+                
+                <div class="beal">
+                    <h1>Bradley Beal Leaves Suns-Pacers</h1>
+                    <h6>After getting struck in face, Beal moves on.</h6>
+                    <h5><a href="https://www.si.com/nba/suns/gameday/bradley-beal-struck-face-leaves-phoenix-suns-indiana-pacers">Click here to read more</a></h5>
+                </div>
+
+            </article>
+            
+            
+
+            <div class="articleDash">
+
+                <div class="varsity"> 
+
+                    <h4>University Cuts 6 Varisty Sports</h4>
+                    <h5>Loyola Marymount University to Cut Sports Programs at End of 23-24 Season</h5>
+                    <p>University decides cuts in response to changing landscape of NCSAA, hoping to allocate more resources to its other athletic programs.</p>
+                    <a href="https://ktla.com/news/local-news/loyola-marymount-university-to-cut-six-varsity-sports-programs/"><p class="link">More..</p></a>
+                    <img src="https://ca-times.brightspotcdn.com/dims4/default/f401a10/2147483647/strip/true/crop/1000x562+0+0/resize/1200x674!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F60%2F4a%2F80d446914b4eaa219194bac5ba12%2F2018dronestills226.jpg">
+                    
+                </div>
+
+                <div class="harbaugh">
+                    <h4>Jim Harbaugh New Chargers Coach</h4>
+                    <h5>Chargers Can't Pass Up on Harbaugh Opportunity</h5>
+                    <p>Harbaugh is now the new head coach for the Los Angeles Chargers team. The Chargers future is promising.</p>
+                    <a href="https://www.nytimes.com/section/sports"><p class="link">More..</p></a>
+                    <img src="https://cdn.theathletic.com/cdn-cgi/image/width=1440%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/01/24233305/GettyImages-1918368391-1024x683.jpg">
+                </div>
+
+                <div class="eclipse">
+                    <h4>Solar Eclipse on Opening Day</h4>
+                    <h5>Opening Day in Cleveland Created by Solar Eclipse</h5>
+                    <p>April 8 will feature the last total solar eclipse that will be visible in the U.S. until August 2044, as well as the first home game for the Guardians.</p>
+                    <a href="https://theathletic.com/5224300/2024/01/25/mlb-total-solar-eclipse-cleveland-guardians-april/?source=nyt_sports"><p class="link">More..</p></a>
+                    <img src="https://media.wired.com/photos/65287a8529f498fe7557d858/master/pass/annular-science-GettyImages-1221999036.jpg">
+                </div>
+
+                <div class="freshman">
+                    <h4>Freshman Wows Magic Johnson</h4>
+                    <h5>South Carolina Freshman Star has Promising Future with NBA</h5>
+                    <p>Promising freshman Milaysia Fulwiley impressed NBA and Magic Johnson during her performance against Notre Dame.</p>
+                    <a href="https://theathletic.com/5225222/2024/01/25/milaysia-fulwiley-south-carolina-gamecock-college-basketball-freshman/?source=nyt_sports"><p class="link">More..</p>
+                    <img src="https://cdn.theathletic.com/cdn-cgi/image/width=1440%2cformat=auto%2cquality=75/https://cdn.theathletic.com/app/uploads/2024/01/24144720/GettyImages-1790301508-scaled-e1706127909630-1024x683.jpg">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="business" id="business">
+
+            <h3>
+                Business
+            </h3>
+
+            <article class="breaking">
+
+                <a href="https://www.wsj.com/business/vince-mcmahon-resigns-from-tko-group-board-ce1987ea?mod=business_lead_story" target="_blank">
+                    <img src="https://images.wsj.net/im-918146?size=1.4562002275312855&width=600&height=400" alt="vince" target="_blank">
+                </a>
+
+                <div class="vince">
+                    <h1>Vince McMahon Resigns From TKO Group Board</h1>
+                    <h6>Following the longtime wrestling executive's exit is a lawsuit by a former employee, citing sexual abuse.</h6>
+                    <h5><a href="https://www.wsj.com/business/vince-mcmahon-resigns-from-tko-group-board-ce1987ea?mod=business_lead_story">Click here to read more</a></h5>
+                </div>
+
+            </article>
+        
+            <div class="articleDash">
+
+                <div class="shoppers"> 
+ 
+                    <h4>World&apos;s Richest Shoppers&apos; Competition</h4>
+                    <h5>Competition Between Shopping Addicts Like You Have Never Known</h5>
+                    <p>This competition invites individuals from all over the world, offering backstage passes, secret dinners, exclusive intvites, and other secretive luxuries. Take a look inside of the competition.</p>
+                    <a href="https://www.wsj.com/business/retail/inside-the-competition-for-the-worlds-richest-shoppers-15a998fe?mod=business_lead_pos1"><p class="link">More..</p></a>
+                    <img src="https://images.wsj.net/im-917881/?width=1278&size=1">
+                
+                </div>
+
+                <div class="flexport">
+                    <h4>Flexport Drops Staff</h4>
+                    <h5>Flexport Plans to Cut an Additional 20% of Staff</h5>
+                    <p>This decision to cut 20% of their staff, or around 500 people, comes after the footwear company struggles to maintain its financial foothold.</p>
+                    <a href="https://www.wsj.com/articles/flexport-plans-to-cut-another20-of-staff-c4c3be60?mod=business_lead_pos2"><p class="link">More..</p></a>
+                    <img src="https://images.wsj.net/im-917815?width=700&size=1.5005861664712778&pixel_ratio=2">
+                </div>
+
+                <div class="allen">
+                    <h4>Booz Allen Sharp Net Rise</h4>
+                    <h5>Booz Allen&apos;s Quarterly Net Income Rises Sharply</h5>
+                    <p>Booz Allen Hamilton said its net income more than quadrupled during fiscal third quarter, boosting projections for the end of the fiscal year in March.</p>
+                    <a href="https://www.wsj.com/business/earnings/booz-allens-quarterly-net-income-rises-sharply-78c394d5?mod=business_lead_pos3"><p class="link">More..</p></a>
+                    <img src="https://images.wsj.net/im-574364?width=700&size=1.4430665163472378&pixel_ratio=2">
+                </div>
+
+                <div class="packaging">
+                    <h4>Consumers Prefer Smaller</h4>
+                    <h5>Minimalist Packaging is Becoming Increasingly More Popular</h5>
+                    <p>Research shows that consumers want smaller packaging, saying it tends to increase the perceived purity and value of items.</p>
+                    <a href="https://www.wsj.com/business/retail/consumers-simple-packaging-5f49f46e?mod=business_lead_pos4"><p class="link">More..</p>
+                    <img src="https://images.wsj.net/im-916483?width=700&size=1.5&pixel_ratio=2">
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="culture" id="culture">
+
+            <h3>
+                Culture
+            </h3>
+
+            <article class="breaking">
+
+                <a href="https://www.nbcnews.com/tech/tech-news/taylor-swift-nude-deepfake-ai-photos-images-rcna135913" target="_blank">
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-920x460,f_auto,q_auto:best/rockcms/2024-01/240126-taylor-swift-se-247p-9089b4.jpg" alt="swift">
+                </a>
+
+                <div class="ai">
+                    <h1>AI-Generated Taylor Swift Fake Nudes Spark Response From Microsoft CEO</h1>
+                    <h6>The explicit generated images went viral on X, causing concern and outrage over how the AI-generated content was able to evade guidelines and be created in general.</h6>
+                    <h5><a href="https://www.nbcnews.com/tech/tech-news/taylor-swift-nude-deepfake-ai-photos-images-rcna135913">Click here to read more</a></h5>
+                </div>
+
+            </article>
+        
+            <div class="articleDash">
+
+                <div class="spears"> 
+ 
+                    <h4>Spear&apos;s &apos;Selfish&apos; Stays</h4>
+                    <h5>Britney Spears Song &apos;Selfish&apos; Remains Ever Popular</h5>
+                    <p>The singer's 2011 song continues strong with a loyal following, surpassing the ratings of ex-boyfriend Justin Timberlake's own new song with the same name.</p>
+                    <a href="https://www.nbcnews.com/pop-culture/britney-spears-selfish-song-itunes-justin-timberlake-rcna135952"><p class="link">More..</p></a>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2023-10/231017-britney-spears-justin-timberlake-ew-1216p-5c211a.jpg">
+                
+                </div>
+
+                <div class="stanley">
+                    <h4>Lunar Stanley Sellout</h4>
+                    <h5>Limited Cup Sells Out in Just 30 Minutes</h5>
+                    <p>The New Years edition of the Stanley cup, paying homage to the holiday through its colors and designs representative of the year of the dragon, quickly sold out in just under 30 minutes after being released to the public.</p>
+                    <a href="https://www.nbcnews.com/news/asian-america/stanley-cup-lunar-new-year-dragon-red-cream-rcna135753"><p class="link">More..</p></a>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2024-01/240125-stanley-tumbler-lunar-new-year-ew-348p-a93fed.jpg">
+                </div>
+
+                <div class="pig">
+                    <h4>Pig-Head Pit</h4>
+                    <h5>Texas Metal Band Throws Severed Pig Heads into Crowd</h5>
+                    <p>The band, Martyrdom, faced a lot of criticism after tossing pig heads into the pit of their crowd, particularly for offending vegan and Muslim fans who may have been  apart of their audience at the time.</p>
+                    <a href="https://www.nbcnews.com/pop-culture/pop-culture-news/texas-metal-band-apologizes-tossing-severed-pig-head-crowd-criticized-rcna135704"><p class="link">More..</p></a>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_avif,q_auto:eco,dpr_2/rockcms/2024-01/240125-white-swan-live-houston-se-125p-897425.jpg">
+                </div>
+
+                <div class="toothpick">
+                    <h4>Fried Toothpick Trend</h4>
+                    <h5>Viral Trend in South Korea Encourages Eating Toothpicks</h5>
+                    <p>The trend, viral on TikTok and Instagram, consists of deep-frying toothpicks, coating them in starch and seasoning, and eating them. This trend can be dangerous and unhealthy, and it is not something that should be continued.</p>
+                    <a href="https://www.nbcnews.com/news/world/south-korea-warns-stop-eating-fried-toothpicks-viral-trend-rcna135596"><p class="link">More..</p>
+                    <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_focal-260x130,f_avif,q_auto:eco,dpr_2/rockcms/2024-01/240125-korea-toothpics-mb-0859-b7ae9b.jpg">
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="science" id="science">
+
+            <h3>
+                Science
+            </h3>
+
+            <article class="breaking">
+
+                <a href="https://www.nytimes.com/2024/01/25/science/nasa-ingenuity-helicopter-mars.html" target="_blank">
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/210407161923-ingenuity-helicopter-0405.jpg?q=x_3,y_227,h_1403,w_2494,c_crop/w_850" alt="ingenuity">
+                </a>
+
+                <div class="ingenuity">
+                    <h1>NASA Helicopter Ends Mission</h1>
+                    <h6>Ingenuity finished its mission after flying over the red planet 72 times, looking for evidence that points to life having existed on the planet.</h6>
+                    <h5><a href="https://www.nytimes.com/2024/01/25/science/nasa-ingenuity-helicopter-mars.html">Click here to read more</a></h5>
+                </div>
+
+            </article>
+            
+            <div class="articleDash">
+ 
+                <div class="japan">
+                    <h4>Japan Lands on the Moon</h4>
+                    <h5>Japan Becomes 5th Nation to Land on Moon with SLIM Moon Lander</h5>
+                    <p>JAXA's SLIM makes soft lunar landing with the help of LEV-1 and LEV-2 Companions after Initially Losing Contact with Handlers</p>
+                    <a href="https://www.nytimes.com/live/2024/01/26/world/israel-hamas-gaza-news"><p class="link">More..</p></a>
+                    <img src="https://cdn4.premiumread.com/?url=https://www.japantimes.co.jp/japantimes/uploads/images/2024/01/19/275771.jpg&q=100&f=jpg&t=1.2">
+                </div>
+
+                <div class="doom">
+                    <h4>We&apos;re Running Out of Time</h4>
+                    <h5>Doomsday Clock Reveals that We May be Nearing Total Annialation</h5>
+                    <p>Having ticked for 77 years, the Doomsday Clock is intended to guage how close humanity is to destroying the world. On Tuesday, it indicated that we are the closest we have ever been to the end.</p>
+                    <a href="https://www.cnn.com/2024/01/23/world/doomsday-clock-2024-climate-scn/index.html"><p class="link">More..</p></a>
+                    <img src="https://i2-prod.dailystar.co.uk/incoming/article15311039.ece/ALTERNATES/s1200e/0_doomsday-19jan18-675383">
+                </div>
+
+                <div class="wolf">
+                    <h4>Wolf Hunting Harmful</h4>
+                    <h5>Sparing Livestock in Europe by Wolf Hunting Could be Harmful</h5>
+                    <p>Scientists say permitting the hunting of wolves, which kill thousands of sheep annually, could hurt the environment more than help it.</p>
+                    <a href="https://www.science.org/content/article/plan-allow-wolf-hunting-europe-protect-livestock-could-backfire-some-scientists-say"><p class="link">More..</p></a>
+                    <img src="https://www.science.org/do/10.1126/science.zb1ev6o/full/_20240124_nid_europe_wolves_culling-1706131444793.jpg">
+                </div>
+
+                <div class="fossils">
+                    <h4>Mulicellular Fossils</h4>
+                    <h5>Fossils Found in China Offer Glimpse into Evolution of Life</h5>
+                    <p>Fossils of microbes that became multicellular 1.6 billion years ago, effectively giving life to all plants and animals, are discovered in ancient Chinese rocks</p>
+                    <a href="https://www.science.org/content/article/microbes-gave-rise-all-plants-and-animals-became-multicellular-1-6-billion-years-ago"><p class="link">More..</p></a>
+                    <img src="https://www.science.org/do/10.1126/science.z4ibvhb/full/_20240124_nid_ancient_eukaryotes_site-1706124465587.jpg">
+                </div>
+                
+            </div>
+
+        </div>
+
+    </main>
+   
+</body>
+
+</html>

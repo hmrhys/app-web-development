@@ -1,0 +1,610 @@
+/**************/
+/* In General */
+body {  
+    font-family: 'Arial', sans-serif;
+
+    display: grid;  
+
+    grid-template-columns: 0fr 3fr;
+    grid-template-rows: auto;
+
+    margin: 0;
+}
+
+/***********/
+/* Sidebar */
+aside {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 20px;
+    width: 200px;
+
+    grid-column: 1;
+}
+
+/* dash logo */
+aside .logoImg {
+    max-width: 100%;
+    height: auto;
+
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.appLogo p {
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+.userAcc img {
+    border: 2px solid #ECF0F1;
+}
+
+.userAcc #accInfo {
+    border-bottom: #ECF0F1;
+}
+
+#name {
+    font-weight: 600;
+    font-size: large;
+}
+
+/* Sidebar button box */
+.links a {
+    color: #ECF0F1;
+    background: #59616a;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* Sidebar buttons */
+.links #dashboard, #forms, #uiFt, #buttons, #typography, #tables, #charts {
+    border-bottom: 1px solid #2C3E50;
+}
+
+.links a:hover {
+    background-color: #34495E;
+}
+
+/* Settings/Logout buttons */
+.asideFooter {
+    padding-top: 10px;
+    font-size: small;
+}
+
+.asideFooter #settings, #logout {
+    color:#ECF0F1;
+    padding-right: 4px;
+}
+
+/*******************/
+/* Content Section */
+section header {
+    display: flex;
+    
+    grid-column: 3;
+
+    height: 100px;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "left" "right";
+}
+
+/* Left section */
+.leftSec {
+    display: flex;
+
+    grid-column: 1;
+
+    height: 60px;
+    width: 820px;
+
+    padding-top: 10px;
+    padding-bottom: 4px;
+
+    background: linear-gradient(to left, #2C3E50 10%, white);
+}
+
+.leftSec span {
+    font-size: 2em;
+    font-weight: 600;
+    color: #2C3E50;
+
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 50px;
+
+    white-space: nowrap;
+}
+
+.search {
+    padding-top: 5px;
+
+    justify-content: left;
+    display: flex;
+
+    width: 603.4px;
+}
+
+.search label {
+    padding-left: 10px;
+    padding-top: 12px;
+
+    color: #ECF0F1;
+}
+
+.search input {
+    padding: 10px;
+}
+
+#text-field-hero-input {
+    width: 350px;
+    height: 15px;
+}
+
+/* Right Section */
+.rightSec {
+    background: #2C3E50;
+   
+    grid-column: 2;
+    grid-row: 1;
+    
+    justify-self: left;
+    
+    width: 320px;
+    
+    display: block;
+    padding-left: 70px;
+    padding-top: 10px;
+    
+    height: 64.2px;
+    width: 352px;
+
+    color: #ECF0F1;
+}
+
+.rightSec a {
+    color: #ECF0F1;
+}
+
+.rightSec button {
+    display: flex;
+    flex-direction: row;
+
+    height: 50px
+}
+
+.rightSec img {
+    height: 37px;
+    width: auto;
+}
+
+.accDD {
+    padding-bottom: 100px;
+}
+
+.accDD button {
+    cursor: pointer;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.accMenu {
+    display: block;
+}
+
+.accDD {
+    position: relative;
+    display: inline-block;
+}
+
+.accDD div {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+
+    box-shadow: 0px 8px 16px #59616a;
+    z-index: 1;
+
+    background-color: #78818d;
+}
+
+.accDD:hover .accMenu {
+    display: block;
+}
+
+.accDD span {
+    padding-left: 8px;
+
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.settingsDD {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+    padding-right: 0px;
+}
+
+.settingsDD ul {
+    text-align: left;
+}
+
+.settingsDD li {
+    list-style: none;
+}
+
+.settingsDD button {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    height: 28px;
+    width: 40px;
+    font-size: large;
+}
+
+.settingsDD div {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px #59616a;
+    z-index: 1;
+}
+
+.settingsDDMenu {
+    display: block;
+
+    background-color: #78818d;
+    padding-right: 40px;
+}
+
+.settingsDDMenu ul {
+    list-style: none;
+}
+
+.settingsDD:hover .settingsDDMenu {
+    display: block;
+    text-decoration: none;
+}
+
+.notifDD {
+    position: relative;
+    display: inline-block;
+
+    padding-right: 0px;
+}
+
+.notifDD div {
+    display: none;
+    position: absolute;    
+    min-width: 130px;
+    box-shadow: 0px 8px 16px #59616a;
+    z-index: 10;
+}
+
+.notifDD button {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    height: 28px;
+    width: 40px;
+    font-size: large;
+}
+
+.notifDD:hover .notifMenu {
+    display: block;
+}
+
+.notifDD .title {
+    font-size: 1em;  
+    border-bottom: 1px solid #ECF0F1; 
+}
+
+.notifMenu {
+    padding-left: 10px;
+    padding-right: 20px;
+
+    background-color: #78818d;
+}
+
+.notifDD ul {
+    text-align: left;
+}
+
+.notifDD ul h6 {
+    font-size: small;
+}
+
+.msgDD {
+    position: relative;
+    display: inline-block;
+}
+
+.msgDD button {
+    padding-left: 10px;
+    
+    height: 28px;
+    width: 50px;
+    font-size: large;
+}
+
+.msgDD .msgMenu {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+
+    background-color: #78818d;
+}
+
+.msgMenu ul {
+    list-style: none;
+    align-items: center;
+}
+
+.msgDD:hover .msgMenu {
+    display: block;
+
+    min-width: 130px;
+    box-shadow: 0 8px 16px #59616a;
+    z-index: 10;
+}
+
+.msgDD img {
+    height: 50px;
+    width: auto;
+}
+
+.msgDD .title {
+    font-size: 1em;
+    padding-left: 10px;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+/* Main Content Styles */
+main {
+    grid-column: 2/3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*******************/
+/* dash info boxes */
+.dashInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    padding-bottom: 15px;
+}
+
+/* individual style for boxes */
+.dashInfo > div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: #2C3E50;
+    color: #ECF0F1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 7, 0, 0.1);
+}
+
+/* style for box headers */
+.dashInfo h5 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* style for title of box headers (first header) */
+.dashInfo > div > h5:first-child {
+    margin-top: 0px;
+}
+
+/* style for dollar amount (second headers) */
+.dashInfo h5:last-child {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* additional info in boxes */
+.dashInfo p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/**************************/
+/* CARD: Revenue Location */
+.revenueLoc {
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.revenueLoc h4 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ECF0F1;
+}
+
+.subtitleInfo {
+    margin-bottom: 12px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between
+}
+
+.data table {
+    width: 50%;
+    background-color: #708396;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.2 );
+    border-spacing: collapse;
+    font-weight: 600;
+}
+
+.row1 {
+    background-color: #ECF0F1;
+    color:#2C3E50;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.row3 {
+    background-color: #ECF0F1;
+    color:#2C3E50;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.row5 {
+    background-color: #ECF0F1;
+    color:#2C3E50;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.revenueLoc img {
+    max-width: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+
+.revenueLoc button {
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #ECF0F1;
+    border-color: #59616a;
+}
+
+/*****************/
+/* CARD: Impressions Chart */
+.grid, .traffic, .impresisons {
+    background-color: #708396;
+    color: #ECF0F1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+    margin-bottom: 10px;
+}
+
+.traffic {
+    background-color:  #34495E;
+    color: #ECF0F1
+}
+
+.grid img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+}
+
+.impressions img {
+    margin-bottom: 10px;
+}
+
+.impressions h3 {
+    font-size: 1.5em;
+    border-bottom: 3px solid #ECF0F1;
+    padding-bottom: 10px;
+}
+
+.traffic h3 {
+    font-size: 1.4em;
+    border-bottom: 3px solid #ECF0F1;
+    padding-bottom: 10px;
+}
+
+/***************************************/
+/** Revenue by Location 2, Order stats */
+.grid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+
+.RevenueLoc2 {
+    display: fle;
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+    position: relative;
+}
+
+.RevenueLoc2 h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ECF0F1;
+    padding-bottom: 10px;
+    width: 250px;
+}
+
+.RevenueLoc2 h6 {
+    font-size: 0.8em;
+}
+
+.RevenueLoc2 button {
+    background-color: #708396;
+    cursor: pointer;
+    color: #ECF0F1;
+    font-weight: 600;
+    border: 1px solid #59616a;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+    margin-bottom: 20px;
+}
+
+.RevenueLoc2 img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+}
+
+/***************/
+/* Order Stats */
+.orderStats {
+    background-color: #708396;
+    color: #ECF0F1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+}
+
+.orderStats h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ECF0F1;
+    padding-bottom: 10px;
+}
+
+.orderStats h6 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.orderStats img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1 );
+}
