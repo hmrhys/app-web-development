@@ -1,0 +1,94 @@
+button {
+    /* position:absolute; */
+    justify-content: left;
+    /* right:0; */
+
+    justify-self: left;
+    align-items: left;
+
+    position:absolute;
+    left:20px;
+    top:30px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+
+    margin-top: 5vw;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container h2 {
+    /* background-color: rgb(170, 68, 68); */
+    color: rgb(247, 242, 242);
+    background-color:rgb(170, 68, 68);
+    border-radius: 8px;
+    padding: 2vw;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 0px 4px 8px rgba(188, 182, 182, 0.586);
+
+}
+
+form {
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+
+    margin: 20px;
+    width:400px;
+    margin-bottom: 0px;
+    margin-top: 1vw;
+
+    border-radius: 9px;
+    background-color: rgb(247, 242, 242);
+    box-shadow: 0px 4px 8px rgba(188, 182, 182, 0.586);
+}
+
+#username {
+    margin-top: 10px;
+}
+
+#username, #password {
+    margin-bottom: 10px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 8px;
+    width: 100%;
+    color: rgb(105, 105, 105);
+    /* margin-top: 1vw; */
+    cursor: text;
+}
+
+#username:hover, #password:hover {
+    background: rgb(170, 170, 170);
+    color:rgb(79, 79, 79);
+}
+
+#login {
+    margin-bottom: 10px;
+    /* background-color: */
+    border-radius: 8px;
+    width: 85%;
+    margin-top: 1vw;
+    box-shadow: 0px 4px 8px rgba(145, 108, 108, 0.586);
+}
+
+/* try rem */
+
+footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    justify-content: center;
+}
+

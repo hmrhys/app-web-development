@@ -1,0 +1,81 @@
+.postHead {
+    display:flex;
+    flex-direction:row;
+    /* background-color:red; */
+    /* justify-content:space-around; */
+}
+
+.userLine #name {
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+#tag {
+    margin-left: 5px;
+}
+
+.attr {
+    /* position:relative;
+    float:right; */
+    margin-left: 10px;
+    display:flex;
+    align-self: right;
+    text-align: right;
+    justify-self: right;
+    justify-content: right;
+
+    color:rgb(133, 133, 133);
+}
+
+/* .attr {
+    justify-content: left;
+    align-items: left;
+    justify-content: row;
+} */
+
+/* .postHead div {
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    
+} */
+
+/* #userInfo {
+    flex-direction: column;
+} */
+
+/* .postHead-name {
+    flex-direction: column;
+} */
+
+
+/* #pfp {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+img {
+    width: 3vw;
+}
+
+/* #user {
+    text-align: left;
+    gap:0px;
+} */
+
+
+
+/* .postHead {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 15px;
+} */
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+} */
+
