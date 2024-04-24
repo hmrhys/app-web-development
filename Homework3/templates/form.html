@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/form.js"></script>
+    <title>PayGo: Pay Your Friends</title>
+</head>
+
+<body>
+
+    <header>PayGo <img src="./images/logo.png" alt="shoe logo" id="logo"></header>
+
+    <form class="content" method="POST" enctype="multipart/form-data" action="/send" id="paymentForm">
+        <section class="sender">
+
+            <h1>Sender Details</h1>
+
+            <div>
+    
+                <div class="browseImg">
+    <!-- form ... enctype="multipart/form-data" -->
+                    <div class="imgArea">
+                        <img id="previewImg" src="./images/imgPlaceholder.png" alt="Image Preview">
+                    </div>
+    
+                    <div>
+                        <input type="file" id="browseImg" name="imgPreview" accept="image/*" required>
+
+                        <button class="removeImg" onclick="removeImg(e)">Remove File</button>
+                    </div>
+    
+                </div>
+    
+                <hr>
+    
+                <div class="name">
+    
+                    <div class="first">
+                        <label for="sFirst">First Name:</label>
+                        <input type="text" name="senderFirstName" id="sFirst" required>
+                    </div>
+    
+                    <div class="last">
+                        <label for="sLast">Last Name:</label>
+                        <input type="text" name="senderLastName" id="sLast" required>
+                    </div>
+                    
+    
+                </div>
+            
+            </div>
+    
+    
+        </section>
+    
+        <section class="recipient">
+
+            <!-- <section class="recipientInfo"> -->
+    
+            <h1>Recipient Details</h1>
+    
+            <div>
+    
+                <div class="name">
+    
+                    <div class="first">
+                        <label for="rFirst">First Name:</label>
+                        <input type="text" name="recipientFirstName" id="rFirst" required>
+                        <!-- required pattern="^(?!Stu$|Stuart$|stu$|stuart$).*$" -->
+                    </div>
+    
+                    <div class="last">
+                        <label for="rLast">Last Name:</label>
+                        <input type="text" name="recipientLastName" id="rLast" required>
+                        <!-- required pattern="^(?!Dent$|dent$).*$" -->
+                    </div>
+                
+                </div>
+    
+                <div class="message">
+    
+                    <label for="msg">Message</label>
+                    <textarea type="text" name="message" id="msg"></textarea>
+    
+                </div>
+    
+                <div class="notifyOps">
+    
+                    <div class="notifLabel">
+                        <label>Notify Recipient:</label>
+                    </div>
+                    
+                    <div class="radioBtns">
+                        <!-- Radio buttons for Notify options -->
+                        <input type="radio" id="email" name="notif" value="email" required>
+                        <label for="email">Email</label>
+     
+                        <input type="radio" id="sms" name="notif" value="sms" required>
+                        <label for="sms">SMS</label>
+    
+                        <input type="radio" id="dnn" name="notif" value="dnn" required>
+                        <label for="sms">Do not notify</label>
+                    </div>
+                    
+    
+                </div>
+    
+                <div class="notifyInfo">
+    
+                    <div class="eInfo">
+                        <label for="emailInfo">Email:</label>
+                        <input type="email" name="email" id="emailInfo">
+                    </div>
+                    
+                    <!-- can also do <input type="tel"...> -->
+                    <div class="pInfo">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" name="phoneNumber" id="phone" maxlength="12">
+                    </div>
+    
+                </div>
+    
+            </div>
+
+            <!-- </section> -->
+    
+    
+        </section>
+    
+        <section class="payment">
+    
+            <section class="payDetails">
+    
+                <h1>Payment Details</h1>
+    
+                <div>
+    
+                    <div class="card">
+       
+                        <div class="cType">
+                            <label for="cardType">Card Type:</label>
+                            <select id="cardType" name="cardType">
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="amex">American Express</option>
+                                <option value="discover">Discover</option>
+                            </select>
+                        </div>
+                      
+                        <div class="cNum">
+                            <label for="cardNum">Card Number:</label>
+                            <input type="text" name="cardNumber" id="cardNum" placeholder="XXXX-XXXX-XXXX-XXXX" required maxlength="19" required minlength="19" required>
+                        </div>
+    
+                    </div>
+      
+                    <div class="security">
+      
+                        <div class="exp">
+                            <label for="exp">Expiration Date:</label>
+                            <input type="date" id="exp" name="exp" min="2024-02-23" required>
+                        </div>
+    
+                        <div class="ccv">
+                            <label for="ccv">CCV:</label>
+                            <input type="password" id="ccv" name="ccv" maxlength="4" minlength="3" required>
+                        </div>
+    
+                        <div class="amt">
+                            <label for="amt">Amount ($):</label>
+                            <input type="text" id="amt" name="amt" required>
+                        </div>
+     
+                    </div>
+    
+                    <div class="terms">
+    
+                        <input type="checkbox" id="chkbx" name="chkbx" required="true">
+                        <label for="chkbx">I agree to the <a href="https://venmo.com/legal/us-user-agreement/" target="_blank">Terms and Conditions</a></label>
+    
+                    </div>
+    
+                </div>
+    
+                <div>
+                    <input type="submit" id="send" value="Send">
+                    <input type="reset" class="resetForm">
+                </div>
+    
+            </section>
+            
+    
+        </section>        
+    </form>
+    
+</body>
+</html>

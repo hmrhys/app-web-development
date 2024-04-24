@@ -1,0 +1,103 @@
+body {
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+
+    background-color: rgb(69, 172, 69);
+    color: rgb(255, 255, 255);
+
+    padding: 6px;
+    padding-left: 20px;
+
+    text-align: left;
+    max-width: 100%;
+
+    margin-bottom: 10px;
+
+}
+
+header img {
+    height: 20px;
+    color: white;
+    margin-left: 3px;
+}
+
+section h1 {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    background: rgb(255, 255, 255);
+
+    border: 1px solid rgba(69, 172, 69);
+
+    padding: 30px;
+    padding-top: 10px;
+    margin-top: 50px;
+    
+    box-shadow: 8px 8px rgb(69, 172, 69);
+
+    width: auto;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+    background-color: rgba(172, 230, 172, 0.445);
+
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+section p {
+    justify-content: center;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    line-height: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+
+    border: 2px solid rgb(175, 227, 175);
+    box-shadow: 0 4px 8px rgb( 0, 0, 0, 0.1 );
+    border-radius: 6px;
+    background-color: rgb(69, 172, 69);
+    color: rgb(255, 255, 255);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover {
+    background-color: rgb(52, 147, 52);
+    color: rgb(223, 224, 222);
+
+    cursor:pointer;
+}
